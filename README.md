@@ -120,3 +120,28 @@ If we test the DELETE endpoint by sending a request with a method of 'DELETE' an
 
 Status code: 204
 Status text: No content
+
+### System Testing
+
+Our first example of system testing is 'system integration testing' to perform this on our project we could integration test the CREATE method and then check that the output from the READ method is expected.
+
+If we created our lemon above and received the 201 status code and status text of created we could then read all of the products and expect a status code of 200, status text of OK and a message body containing the lemon we created.
+
+Alternatively we could 'black box' system test by using the front end to create a new product and reading the page to make sure that the new product has been created.
+
+### User Acceptance Testing
+
+An example of a user acceptance test would be:
+
+*As a* user
+*when* I enter a product id into the update field
+*and* enter new information
+*I want* to be able to see that the product has been updated.
+
+GIVEN that a user can access the front-end of the API
+WHEN they enter a valid id into the update field
+AND the enter a name
+AND they enter a descrption
+AND they enter a price
+AND they click the PUT button
+THEN the updated product is visible on the page
