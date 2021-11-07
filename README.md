@@ -111,3 +111,12 @@ If we test the builder and input the name of "Lemon", a description of "A yellow
     price : 0.4
 }
 ~~~
+
+### Integration
+
+An example integration test we can create for this project is to test the RESTful endpoints.
+
+If we test the DELETE endpoint by sending a request with a method of 'DELETE' and a path of '/product/delete/1' we should expect the response to be:
+
+Status code: 204
+Status text: No content
