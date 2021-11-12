@@ -145,3 +145,6 @@ AND they enter a descrption
 AND they enter a price
 AND they click the PUT button
 THEN the updated product is visible on the page
+
+Updated by Amanda 12/11/2021
+
