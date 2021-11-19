@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: amanda-nodeapp-lb
+spec:
+  type: LoadBalancer
+  selector:                     # This selector references the label in the Pod
+    app: amanda-nodeapp         # template spec for the Deployment
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 5000
